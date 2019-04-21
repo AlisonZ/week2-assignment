@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import bookmark from './tag.png';
-
+import logo from './logo.svg';
+import './App.css';
 class AuthorInfoComponent extends Component {
     render() {
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
@@ -9,12 +10,14 @@ class AuthorInfoComponent extends Component {
         const day = this.props.date.substring(8,10).replace(/^0+/,'');
     
         return (
-            <div>
-                <img src={this.props.authImg} />
-                <div>{this.props.author}</div>
-                <div>{`${month} ${day}`}</div>
-                <div>{this.props.readTime}</div>
-                <img src={bookmark} />
+            <div class="author-info">
+                <img src={this.props.authImg} id="auth-img"/>
+                <div id="auth-details">
+                    <div>{this.props.author}</div>
+                    <div>{`${month} ${day}`}</div>
+                    <div>{`${this.props.readTime} min read `}</div>
+                </div>
+                <img src={logo} class="bookmark" />
             </div>
         );
     }
