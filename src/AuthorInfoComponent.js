@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import bookmark from './tag.png';
 
-class AuthorDetailsComponent extends Component {
+class AuthorInfoComponent extends Component {
     render() {
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
         const monthNum = parseInt(this.props.date.substring(5,7));
@@ -20,4 +20,4 @@ class AuthorDetailsComponent extends Component {
     }
 }
 
-export default AuthorDetailsComponent;
+export default AuthorInfoComponent;
