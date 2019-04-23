@@ -14,9 +14,9 @@ class AuthorInfoComponent extends Component {
             <div class="author-info">
                 <div id="auth-details">
                     <img src={this.props.authImg} id="auth-img" />
-                    <div>
-                        <div class="auth-data">{this.props.author}</div>
-                        <div class="auth-data">{`${month} ${day} ∙ ${this.props.readTime} min read`}</div>
+                    <div class="auth-data-container">
+                        <div class="auth-data secondary-text secondary-text-bold">{this.props.author}</div>
+                        <div class="auth-data secondary-text" id="article-time">{`${month} ${day} ∙ ${this.props.readTime} min read`}</div>
                     </div>
                 </div>
                 <img src={bookmark} class="bookmark" />

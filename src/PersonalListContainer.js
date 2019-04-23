@@ -10,8 +10,10 @@ class PersonalListContainer extends Component {
 
         return (
             <div>
-                <div>For you</div>
-                <ul>{personalArticles}</ul>
+                <div class="header primary-text">For you</div>
+                <div class="personal-article-container">
+                    {personalArticles}
+                </div>
             </div>
         );
     }
