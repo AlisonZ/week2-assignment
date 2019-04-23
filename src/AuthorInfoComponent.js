@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import bookmark from './tag.png';
-import logo from './logo.svg';
 import './App.css';
 class AuthorInfoComponent extends Component {
     render() {
@@ -13,13 +12,13 @@ class AuthorInfoComponent extends Component {
         return (
             <div class="author-info">
                 <div id="auth-details">
-                    <img src={this.props.authImg} id="auth-img" />
+                    <img src={this.props.authImg} id="auth-img" alt="" />
                     <div class="auth-data-container">
                         <div class="auth-data secondary-text secondary-text-bold">{this.props.author}</div>
                         <div class="auth-data secondary-text" id="article-time">{`${month} ${day} ∙ ${this.props.readTime} min read`}</div>
                     </div>
                 </div>
-                <img src={bookmark} class="bookmark" />
+                <img src={bookmark} class="bookmark" alt="" />
             </div>
         );
     }
