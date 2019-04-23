@@ -40,9 +40,22 @@
   width: 300px;
 }
 
+
+.missed-article-image {
+  height: 200px;
+  width: 400px;
+}
+
 .personal-article-card {
   display: flex;
   flex: 1 0 40%;
+  margin: 10px; 
+  border-style: solid;
+  border-color: #ededed;
+  border-width: 1px;
+}
+
+.card-display {
   margin: 10px; 
   border-style: solid;
   border-color: #ededed;
@@ -76,11 +89,8 @@
 }
 
 .auth-data {
-  /* padding: 15px 0 0 5px; */
   padding-bottom: 5px;
   text-align: left;
-  /* font-size: 13px; */
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 .auth-data-container {
@@ -105,8 +115,17 @@
 }
 
 .article-info-descr {
-  padding-top: 15px;
+  padding: 15px 0;
   text-align: left;
+}
+
+.missed-container {
+  display: flex;
+  padding: 20px 70px;
+}
+
+.missed-card {
+  flex-grow: 1 0 20%;
 }
 
 .App-header {
