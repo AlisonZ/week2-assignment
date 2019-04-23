@@ -17,6 +17,16 @@
 
 .author-info {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#auth-details {
+  display: flex;
+}
+
+.auth-data {
+  padding-top: 15px;
 }
 
 #auth-img {
@@ -24,8 +34,11 @@
 }
 
 .bookmark {
-  height: .5rem;
-  flex-grow: 1;
+  height: 25px;
+}
+
+.article-descr {
+  flex-grow: 2;
 }
 
 .article-info-title {
