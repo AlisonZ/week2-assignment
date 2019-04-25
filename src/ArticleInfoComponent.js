@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class ArticleInfoComponent extends Component {
+    static propTypes = {
+        title: PropTypes.string.isRequired,
+        descr: PropTypes.string.isRequired,
+    }
     render() {
         return (
             <div class="article-descr">

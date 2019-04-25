@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import bookmark from './tag.png';
 import './App.css';
 class AuthorInfoComponent extends Component {
+    static propTypes = {
+        date: PropTypes.string.isRequired,
+        authImg: PropTypes.string.isRequired,
+        author: PropTypes.string.isRequired,
+        readTime: PropTypes.string.isRequired,
+    }
+    
     render() {
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
         const monthNum = parseInt(this.props.date.substring(5, 7));
